@@ -18,7 +18,10 @@ public class db {
         try{
             Class.forName("com.mysql.cj.jdbc.Driver");
           
-            con = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/user_registeration_database","root","");
+            //use this line of code for mysql in xamp "jdbc:mysql://127.0.0.1:3306/user_registeration_database","root",""
+              //the code below is to connect mysql workbench
+              con = DriverManager.getConnection("jdbc:mysql://localhost:3306/user_registeration_database","root","Kenny4640");
+            
             
         }catch (ClassNotFoundException | SQLException e ) {
         System.out.println(e);
