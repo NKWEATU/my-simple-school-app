@@ -253,8 +253,10 @@ public class myInformationFrame extends javax.swing.JFrame {
                 String sql = "SELECT * FROM user_registeration_table WHERE username = '" + myusername +"' ";
 
                 //to get connection
-                Connection con = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/user_registeration_database","root","");
-
+                
+         //use this line of code for mysql in xamp to get connection "jdbc:mysql://127.0.0.1:3306/user_registeration_database","root",""
+        Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/user_registeration_database","root","Kenny4640");
+        
                 //prepared statement
                 Statement s = con.prepareStatement(sql);
                 ResultSet rs = s.executeQuery(sql);
