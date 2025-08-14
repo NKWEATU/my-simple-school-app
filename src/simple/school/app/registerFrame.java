@@ -330,6 +330,10 @@ public class registerFrame extends javax.swing.JFrame {
         else       if (passport.getText().isEmpty() )
         { JOptionPane.showMessageDialog( null,"upload your passport");
         }
+        else     if (Jpassport.getIcon()==(null))
+        { 
+         JOptionPane.showMessageDialog( null,"upload passport"); 
+        }
         else if (password.getPassword() != password2.getPassword())
         { JOptionPane.showMessageDialog( null,"password do not match");
         }
